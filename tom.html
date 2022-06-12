@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Tom Thumb</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <ul>
+                <li><a href="index.html">Mad Libs</a></li>
+                <li><a href="tom.html">Tom Thumb</a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <div id="questions">
+                    <h1>Tom Thumb</h1>
+                    <hr>
+                    <form>
+                    <div class="form-group">
+                        <label for="width">Image width (px)</label>
+                        <input id="width" class="form-control width" type="text" placeholder="Enter an image's width ..">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Image height (px)</label>
+                        <input id="height" class="form-control height" type="text" placeholder="Enter an image's height ..">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Number of colors</label>
+                        <input id="color" class="form-control color" type="text" placeholder="Enter a number of colors ..">
+                    </div>
+                    </form>
+                    <hr>
+                    <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Calculate File's Size</button>
+                    <hr>
+                </div>
+                
+                <div id="story">                    
+                </div>
+            </div>
+        </div>
+    </div>    
+      
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="tom.js"></script>
+  </body>
+</html>

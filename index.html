@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Mad Libs</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <ul>
+                <li><a href="index.html">Mad Libs</a></li>
+                <li><a href="tom.html">Tom Thumb</a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <div id="questions">
+                    <h1>Mad Libs</h1>
+                    <hr>
+                    <form>
+                    <div class="form-group">
+                        <label for="person">Person's Name</label>
+                        <input id="person" class="form-control person" type="text" placeholder="Enter a person's name ..">
+                    </div>
+                    <div class="form-group">
+                        <label for="character">Character</label>
+                        <input id="character" class="form-control character" type="text" placeholder="Enter a character's name ..">
+                    </div>
+                    <div class="form-group">
+                        <label for="adverb">Adverb</label>
+                        <input id="adverb" class="form-control adverb" type="text" placeholder="Enter an adverb ..">
+                    </div>
+                    <div class="form-group">
+                        <label for="adjective">Adjective</label>
+                        <input id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+                    </div>
+                    </form>
+                    <hr>
+                    <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Tell a story!</button>
+                    <hr>
+                </div>
+                
+                <div id="story">
+                    <h1>Mad Libs Story</h1>
+                    <hr>
+                    <h3>One day, my groupmate <mark class="person"></mark> was visiting Almaty and ran into <mark class="character"></mark>. <mark class="person"></mark> ran <mark class="adverb"></mark> to meet <mark class="character"></mark>. But <mark class="character"></mark> turned out to be very <mark class="adjective"></mark>. 
+                </div>
+            </div>
+        </div>
+    </div>    
+      
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
